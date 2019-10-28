@@ -7,6 +7,7 @@
   "main": "index.js",
   "module": "index.js",
   "scripts": {
+    "build": "rollup -c rollup.config.js",
     "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
     "start:compatibility": "es-dev-server --app-index demo/index.html --compatibility all --node-resolve --open --watch"
   },
@@ -15,6 +16,12 @@
     "lit-element": "^2.0.1"
   },
   "devDependencies": {
-    "es-dev-server": "^1.5.0"
+    "es-dev-server": "^1.5.0",
+    "rollup": "^1.26.0",
+    "rollup-plugin-copy": "^3.1.0",
+    "rollup-plugin-index-html": "^1.5.8",
+    "rollup-plugin-license": "^0.12.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2"
   }
 }
