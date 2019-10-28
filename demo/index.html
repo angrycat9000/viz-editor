@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+  <script type="module" src="../viz-editor.js"></script>
+</head>
+<body>
+  <viz-editor 
+    max="50" 
+    min="-50" 
+    epsilon="0.01"
+    config='[
+      {"upper":50, "fill":[
+        {"red":0,"green":255,"blue":255,"alpha":1}, 
+        {"red":0,"green":0,"blue":255,"alpha":1}
+      ]},
+      {"upper":0.99, "fill":[]}, 
+      {"upper":-1, "fill":[
+        {"red":255,"green":255,"blue":0,"alpha":1}, 
+        {"red":255,"green":0,"blue":0,"alpha":1}
+      ]}
+      ]'>
+  </viz-editor>
+</body>
+</html>
